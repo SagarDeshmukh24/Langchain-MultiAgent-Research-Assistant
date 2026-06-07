@@ -15,7 +15,7 @@ import trafilatura
 import re
 
 
-tavily_client = TavilyClient(api_key = os.get_env("TAVILY_API_KEY"))
+tavily_client = TavilyClient(api_key = os.getenv("TAVILY_API_KEY"))
 
 @tool
 def web_search(query : str) -> str:
